@@ -1,17 +1,24 @@
 # my_app
 
-A new Flutter project.
+An augmented reality mobile application built with Flutter and native Android/Kotlin integration. The application uses the device camera to detect predefined image markers and overlays video content on the detected image in real time.
 
-## Getting Started
+How It Works:
 
-This project is a starting point for a Flutter application.
+1. Open Camera
+The user opens the camera through the mobile application.
 
-A few resources to get you started if this is your first Flutter project:
+2. Detect Marker
+The application continuously analyzes the camera feed for a predefined image marker.
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+3. Track Image
+Once the marker is detected, its position and movement are tracked.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+4. Render Video
+A video is rendered over the detected image, creating an augmented-reality effect where the content appears attached to the physical image.
+
+5. Handle Tracking
+When the marker moves, the video follows its position.
+
+When the marker is temporarily lost: Video playback pauses.
+
+When the marker is detected again: Video resumes.
