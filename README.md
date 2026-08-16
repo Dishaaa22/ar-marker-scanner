@@ -1,6 +1,8 @@
 # my_app
 
-An augmented reality mobile application built with Flutter and native Android/Kotlin integration. The application uses the device camera to detect predefined image markers and overlays video content on the detected image in real time.
+AR MARKER SCANNER
+
+An augmented reality mobile application built with Flutter, Dart, Kotlin, and Google ARCore. The application uses the device camera to detect predefined image markers and plays video content directly over the tracked image, creating an interactive AR experience.
 
 How It Works:
 
